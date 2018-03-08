@@ -1,0 +1,6 @@
+Rails notes
+
+***MUST use command prompt w/Ruby to access Heroku CLI. Git bash won't work.
+
+start server: rails s
+stop server: Ctrl + c
