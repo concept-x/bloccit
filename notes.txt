@@ -1,6 +1,13 @@
 Rails notes
 
 ***MUST use command prompt w/Ruby to access Heroku CLI. Git bash won't work.
+**Git bash works for some of it when cp won't. Have to switch to find out, I guess.
 
 start server: rails s
 stop server: Ctrl + c
+
+heroku deployment url: https://ancient-coast-78349.herokuapp.com/
+**do assignment tomorrow 3/8/18
+**checkpoint feedback wouldn't let me enter text, so...offer to fix checkpt
+ instructions (at least for Win users). Offered on a ticket, but not sure if
+ offer was seen.
