@@ -12,4 +12,6 @@ class WelcomeController < ApplicationController
     
   def faq
   end
+    
+    #testing one-line comment; new vivobook
 end
