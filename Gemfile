@@ -21,7 +21,8 @@ end
 group :development do
     # Use sqlite3 as the database for Active Record
     gem 'sqlite3'
-    gem 'pry-rails', :group => :development
+    gem 'pry-rails'
+    gem 'listen', '~> 3.0.5'
 end
 
 # Use Puma as the app server
@@ -50,9 +51,9 @@ gem 'tzinfo-data'
 
 gem 'thor', '0.20.0'
 
-group :development do
-  gem 'listen', '~> 3.0.5'
-end
+#group :development do
+#  gem 'listen', '~> 3.0.5'
+#end
 
 group :development, :test do
     gem 'rspec-rails', '~>3.0'
