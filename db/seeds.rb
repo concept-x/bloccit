@@ -19,19 +19,23 @@ require 'random_data'
  # #3
  100.times do
    Comment.create!(
- # #4 pick a random post to associatea comment with
+ # #4 pick a random post to associate a comment with
      post: posts.sample,
      body: RandomData.random_paragraph
    )
  end
 
 puts "#{Post.count}"
- Post.find_or_create_by(title: 'The Royal Wedding', body: 'Yeah I watched it.')
+# to create/find **and** return, thus keeping our post reference
+# the same, assign entire find_or_create_by command to a variable
+post = Post.find_or_create_by(title: 'The Royal Wedding', body: 'Yeah I watched it.')
 puts "#{Post.count}"
 
  puts "#{Comment.count}"
-Comment.find_or_create_by(Post.title = 'The Royal Wedding', Comment.body = 'LOL')
-#Comment.find_or_create_by(post = Post.last, Comment.body = 'LOL')
+ # see comment above re: variable assignment.
+ # Comment below is also a viable solution.
+Comment.find_or_create_by(post: post, title: 'The Royal Wedding', body: 'LOL')
+#Comment.find_or_create_by(post: Post.last, title: 'Comment Title', body: 'LOL')
  puts "#{Comment.count}"
 
  puts "Seed finished"
