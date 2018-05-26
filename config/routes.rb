@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  resources :posts
+
 #if no 'get' specified, no views display b/c app won't know what to 'get'.
-  get 'welcome/about'
-    
+  get 'about' => 'welcome#about'
+
   get  'welcome/contact'
-    
+
   get 'welcome/faq'
-    
+
   root 'welcome#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
