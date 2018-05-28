@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    #necessary
   end
 
   def new
