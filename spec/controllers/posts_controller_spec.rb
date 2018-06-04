@@ -23,7 +23,7 @@ RSpec.describe PostsController, type: :controller do
   # end
   #
   #'new' makes a new, unsaved Post object (see POST create) below
-   describe 'GET #new' do
+   describe 'GET new' do
      it 'returns http success' do
        get :new
        expect(response).to have_http_status(:success)
@@ -36,7 +36,7 @@ RSpec.describe PostsController, type: :controller do
 
      it "instantiates @post" do
         get :new
-        expect(assigns(:post)).not_to_be_nil
+        expect(assigns(:post)).not_to be_nil
       end
     end
 
