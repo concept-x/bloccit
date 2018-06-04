@@ -1,0 +1,12 @@
+Assignment 17: change first and every subsequent fifth post title to "SPAM".
+
+1. We need an iterator to count by fives
+
+2. We need to target the post title only for change
+
+3. Change data itself, not just the data display
+A: Overwriting data happens in the model, then the controller passes the new look to 
+  the view
+
+
+From 
