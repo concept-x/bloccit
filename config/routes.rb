@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :topics
   resources :posts
 
 #if no 'get' specified, no views display b/c app won't know what to 'get'.

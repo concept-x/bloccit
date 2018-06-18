@@ -11,3 +11,5 @@ heroku deployment url: https://ancient-coast-78349.herokuapp.com/
 **checkpoint feedback wouldn't let me enter text, so...offer to fix checkpt
  instructions (at least for Win users). Offered on a ticket, but not sure if
  offer was seen.
+
+run rake db:schema:load after db:migrate to get the migration to finish.
