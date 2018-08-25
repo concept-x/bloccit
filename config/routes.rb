@@ -2,11 +2,7 @@ Rails.application.routes.draw do
   resources :posts
 
 #if no 'get' specified, no views display b/c app won't know what to 'get'.
-  get 'about' => 'welcome#about'
-
-  get  'welcome/contact'
-
-  get 'welcome/faq'
+  resources :welcome
 
   root 'welcome#index'
 

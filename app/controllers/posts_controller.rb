@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  def index
+  #def index
 #returns a collection of Post objects
-    @posts = Post.all
+  #  @posts = Post.all
 
 # assignment 17: mark every 5th post SPAM
   #  @posts.each_with_index do |post, index|
@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   #      post.title = "SPAM"
   #    end
   # end
-  end
+  #end
 
   def show
     @post = Post.find(params[:id])
@@ -62,5 +62,5 @@ class PostsController < ApplicationController
       flash.now[:alert] = "There was an error deleting the post."
       render :show
     end
-  end  
+  end
 end
